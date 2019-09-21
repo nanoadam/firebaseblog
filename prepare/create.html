@@ -29,10 +29,10 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="create.html">Create</a>
           </li>
         </ul>
@@ -40,29 +40,50 @@
     </nav>
 
     <main role="main">
-      <!-- JUMBOTRON -->
-      <div class="jumbotron">
-        <div class="container">
-          <h1 class="display-3 pt-4">Firebase Blog</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
-            doloribus minima reiciendis. Aliquam et at dignissimos velit
-            excepturi earum beatae non magnam rem officia nam voluptas adipisci
-            cum similique quas necessitatibus quae asperiores, sit aut.
-          </p>
-          <p>
-            <a class="btn btn-primary btn-lg" href="#" role="button"
-              >Learn more &raquo;</a
-            >
-          </p>
-        </div>
-      </div>
-
       <div class="container">
-        <!-- Example row of columns -->
-        <div class="row" id="posts-collection"></div>
-
-        <hr />
+        <div class="card m-4">
+          <div class="card-body">
+            <h2 class="pt-4">Create Post</h2>
+            <div class="form-group">
+              <label for="Author">Author</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Author"
+                id="author"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Post Title">Post Title</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Post Title"
+                id="postTitle"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Post Content">Post Content</label>
+              <textarea
+                id="postContent"
+                cols="30"
+                rows="10"
+                class="form-control"
+                id="postContent"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="Date">Date</label>
+              <input type="date" class="form-control" id="postDate" />
+            </div>
+            <input
+              type="submit"
+              value="Post"
+              class="btn btn-primary"
+              id="submitBtn"
+            />
+          </div>
+        </div>
       </div>
       <!-- /container -->
     </main>
@@ -89,5 +110,6 @@
     ></script>
 
     <script src="app.js"></script>
+    <script src="create.js"></script>
   </body>
 </html>
